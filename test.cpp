@@ -30,11 +30,11 @@ void setup()
     NB.setCallbackMQTT(callback);
     
     // for TCP
-    // NB.createTCPSocket("128.199.99.43",5678);
+    // NB.createTCPSocket("43.229.135.169",5678);
 	// NB.sendMSG("payload1");
     
     // for UDP
-	// NB.createUDPSocket("128.199.99.43",5678);
+	// NB.createUDPSocket("43.229.135.169",5678);
 	// NB.sendMSG("payload1");
 }
 
