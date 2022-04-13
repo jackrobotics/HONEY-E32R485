@@ -24,7 +24,7 @@ void mqtt_setup()
 void setup()
 {
     NB.begin(Serial2)
-    NB.MQTTServer("27.254.115.161", 1883);
+    NB.MQTTServer("43.229.135.169", 1883);
     NB.setCallbackMQTT(callback);
 }
 
@@ -38,6 +38,6 @@ void loop()
     {
         lastupdate = millis();
         String msg = "Hello world";
-        NB.MQTTPublish("pressure", msg);
+        NB.MQTTPublish("mqtt_topic", msg);
     }
 }
