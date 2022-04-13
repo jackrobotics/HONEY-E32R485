@@ -23,6 +23,7 @@ void mqtt_setup()
 
 void setup()
 {
+    NB.begin(Serial2)
     NB.MQTTServer("27.254.115.161", 1883);
     NB.setCallbackMQTT(callback);
 }
