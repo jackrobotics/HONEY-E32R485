@@ -24,8 +24,18 @@ void mqtt_setup()
 void setup()
 {
     NB.begin(Serial2)
+        
+    // for MQTT
     NB.MQTTServer("43.229.135.169", 1883);
     NB.setCallbackMQTT(callback);
+    
+    // for TCP
+    // NB.createTCPSocket("128.199.99.43",5678);
+	// NB.sendMSG("payload1");
+    
+    // for UDP
+	// NB.createUDPSocket("128.199.99.43",5678);
+	// NB.sendMSG("payload1");
 }
 
 void loop()
